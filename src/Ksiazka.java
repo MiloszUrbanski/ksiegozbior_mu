@@ -15,8 +15,6 @@ public class Ksiazka {
     public Ksiazka(String tytul, String autor, int rokWydania) {
         this(0, tytul, autor, rokWydania);
     }
-
-    // Gettery
     public int getId() {
         return id;
     }
