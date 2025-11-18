@@ -14,6 +14,8 @@ class KsiazkiTableModel extends AbstractTableModel {
         fireTableDataChanged();
     }
 
+
+    
     @Override
     public int getRowCount() {
         return data.size();
@@ -23,7 +25,6 @@ class KsiazkiTableModel extends AbstractTableModel {
     public int getColumnCount() {
         return columnNames.length;
     }
-
     @Override
     public String getColumnName(int column) {
         return columnNames[column];
@@ -34,6 +35,7 @@ class KsiazkiTableModel extends AbstractTableModel {
         return data.get(rowIndex);
     }
 
+    
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
         Ksiazka ksiazka = data.get(rowIndex);
